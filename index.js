@@ -27,8 +27,8 @@ function prependDriver(name){
   return newDrivers; 
 }
 
-function removeLastDriver(name){
+function removeLastDriver(){
   var newDrivers = [...drivers];
-  newDrivers.unshift(name);
+  newDrivers.pop();
   return newDrivers; 
 }
